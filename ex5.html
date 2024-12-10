@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #works{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1{
+            font-size: 50px;
+            font-family: "Dela Gothic One", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #works img{
+            width: 25vw;
+        }
+    </style>
+</head>
+<body>
+    <section id="mylist">
+        <h1>yonemasa portfolio</h1>
+    </section>
+    <section id="works">
+
+    </section>
+    <script>
+        let data = [{
+                title: '題名',
+                img: 'aaa.jpg',
+                des: '説明文'
+            },
+            {
+                title: '題名',
+                img: 'bbb.jpg',
+                des: '説明文'
+            },
+            {
+                title: '題名',
+                img: 'ccc.jpg',
+                des: '説明文'
+            },
+            {
+                title: '題名',
+                img: 'ddd.jpg',
+                des: '説明文'
+            },
+            {
+                title: '題名',
+                img: 'eee.jpg',
+                des: '説明文'
+            }];
+
+            const mylist = document.createElement('mylist');
+           
+            data.forEach(el=>{
+                let h2 = document.createElement('h2');
+                h2.textContent = el.title;
+                let img = document.createElement('img');
+                img.src = el.img;
+                let p = document.createElement('p');
+                p.textContent = el.des;
+                let div =document.createElement('div');
+                div.append(h2,img,p,);
+                works.append(div,);
+
+        });
+    </script>
+</body>
+</html>
